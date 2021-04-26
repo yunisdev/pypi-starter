@@ -30,7 +30,7 @@ Clone repo from github to folder with your project name and delete `.git`, `asse
 
 After, you can customize all the things with your needs. Example, you need to change folder name.
 
-Don't forget to delete not useful folders:
+Don't forget to delete useless folders:
 
 ``` bash
 > rm -rf .git
