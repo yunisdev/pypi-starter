@@ -1,0 +1,32 @@
+{
+    "author": "",
+    "author_email": "",
+    "config": {},
+    "dependencies": {
+        "common": [],
+        "dev": [
+            "autopep8",
+            "pylint",
+            "twine",
+            "setuptools", 
+            "wheel"
+        ],
+        "prod": []
+    },
+    "description": "",
+    "environment": "",
+    "name": "project_name",
+    "scripts": {
+        "deploy": {
+            "command": "python -m twine upload --skip-existing --repository-url https://upload.pypi.org/legacy/ dist/*",
+            "description": "Upload to PYPI"
+        },
+        "predeploy": {
+            "command": "python setup.py sdist bdist_wheel",
+            "description": "Build package"
+        }
+    },
+    "url": "",
+    "use_environment": true,
+    "version": "0.0.0"
+}
